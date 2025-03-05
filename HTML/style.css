@@ -15,6 +15,7 @@ header img{
 
 .principal{
     display: flex;
+    height: 500px;
 }
 
 .left{
@@ -37,19 +38,23 @@ header img{
     color: #555050;
 }
 
-.left p{
+#primer{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color:#555050;
-    position: relative;
-    bottom: 30px;
+    position: absolute;
+    top: 90px; left: 200px;
+}
+
+#label-uno{
+    margin-top: 45px;
 }
 
 .left input{
     margin-bottom: 20px;
     margin-top: 10px;
-    height: 40px;
+    height: 70px;
     border-radius: 20px;
-    width: 270px;
+    width: 290px;
     border: solid 1px #555050;
 }
 
@@ -66,6 +71,7 @@ header img{
     color: #4a2cc2;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 25px;
+    cursor: pointer;
 }
 
 .left button{
@@ -77,6 +83,7 @@ header img{
     padding-top: 10px;
     height: 70px;
     width: 270px;
+    cursor: pointer;
 }
 
 #ingresar-btn{
@@ -88,13 +95,87 @@ header img{
     border: none;
 }
 
+#huella-btn{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    align-content: center;
+    padding-top: 15px;
+    background-color: white;
+    border:#00cbbf;
+    color:#00cbbf;
+}
 
+#huella-btn img{
+    position: relative;
+    bottom: 4px; left: 20px;
+}
 
-
-
-
+.left p{
+    position: relative;
+    top: 50px; right: 150px;
+    cursor: pointer;
+}
 
 .right{
     background-color: #00cbbf;
-    max-height: 100%;
+    position: relative;
+    bottom: 90px; 
+    padding-left: 70px;
+    width: 700px;
+    height: 640px;
+}
+
+.texto{
+    position: relative;
+    top: 220px;
+    width: 500px;
+}
+
+.texto h2{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.texto p{
+    color: white;
+    font-size: 17px;
+}
+
+.texto button{
+    background-color: white;
+    color:#00cbbf;
+    height: 40px;
+    width: 260px;
+    border-radius: 20px;
+    display: flex;
+    padding-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.texto button img{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+#img1{
+    height: 150px;
+    position: relative;
+    bottom: 110px; left: 290px;
+}
+
+#img2{
+    height: 180px;
+    position: relative;
+    top: 40px; right: 80px;
+}
+
+#img3{
+    height: 140px;
+    position: relative;
+    top: 190px; right: 50px;
 }
