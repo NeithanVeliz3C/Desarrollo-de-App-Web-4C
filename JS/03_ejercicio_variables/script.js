@@ -1,33 +1,45 @@
-function float(){
-    alert (5.9)
+function decimal(){
+    alert (float)
 };
 
-function string(){
-    alert ("Buenos días")
+let float = 5.7;
+
+function cadenaTexto(){
+    alert (string)
 };
+
+let string = "Buenos dias";
 
 function array(){
-    alert(["Neithan", 17, "hola"])
+    alert(cadena)
 }
 
-function bool(){
-    alert (false)
+let cadena = ["Neithan", 17, "Hola"];
+
+function mostrarBoolean(){
+    alert (bool)
 };
+
+let bool = false;
 
 function matriz(){
-    alert ([[3,7] , [2,9]])
+    alert (conjuntoCadena)
 };
 
-function sumar(c, d){
-    let resultado = c + d;
-    alert ("el resultado es:" + resultado);
-    return resultado;
-};
+let conjuntoCadena = [[1, 4], [6, 9]];
+
+function numeroEntero(){
+    alert (numero)
+}
+
+let numero = 8;
 
 function nulo(){
     alert ("null")
 };
 
-function indefinido(){
-    alert ("undefined")
+function mostrarIndefinida(){
+    alert (indefinido)
 };
+
+let indefinido = undefined; 
