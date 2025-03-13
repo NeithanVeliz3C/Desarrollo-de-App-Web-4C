@@ -34,22 +34,19 @@ function declararVariables() {
         alert ("Resultados: \n suma:" + suma + "\n resta:" + resta + "\n multiplicacion:" + multiplicacion + "\n division:" + division);
     } 
 
-    // Ejercicio 4: Manipulación de cadenas
+// Ejercicio 4: Manipulación de cadenas
     // Instrucciones: Completa la función para construir un mensaje utilizando las variables 'direccion' y 'n_casa'.
     // Luego, muestra la longitud del mensaje y el antepenultimo en el mensaje. (.length)
-    function manipularCadena() {
-    let mensaje = "Esta es la dirección: " + direccion + "\nNúmero de casa: " + n_casa;
-    alert(mensaje);
-    alert("Longitud del mensaje: " + mensaje.length);
+    function manipularCadenas() {
+        let direccion = prompt("Ingresa la dirección: ");
+        let n_casa = parseInt(prompt("Imgresa el número de casa: "));
+        let cadena = direccion + n_casa;
+        let longitud = cadena.length;
+        let antepenultimo = cadena[cadena.length - 3];
 
-    if (mensaje.length >= 3) {
-        alert("Antepenúltimo carácter: " + mensaje[mensaje.length - 3]);
-    } else {
-        alert("El mensaje es muy corto.");
-    }
-}
-
-let direccion = "doñihue";
-let n_casa = 2030;
-
-manipularCadenas();
+        alert(`Tu direccion es: ${cadena}
+            \nTu número de casa es: ${n_casa}
+            \nLargo de cadena: ${longitud}
+            \nCaracter Antepenultimo: ${antepenultimo}`);
+        // Tu código aquí
+        }
