@@ -39,5 +39,11 @@ function encender() { //ejercicio 9
 }
 
 function acceso() {
-    let bloqueado = 
+    let bloqueado = false;
+    let tieneCredenciales = true;
+    if (!bloqueado || !tieneCredenciales) {
+        alert("Acceso denegado");
+    } else {
+        alert("Acceso permitido");
+    }
 }
