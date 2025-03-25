@@ -14,7 +14,7 @@ function apliDescuento() { //ejercicio 7
     if (edad >= 60 || esEstudiante) {
         alert("Descuento aplicado");
     } else {
-        alert("No tienes descuento")
+        alert("No tienes descuento");
     }
 }
 
@@ -24,7 +24,7 @@ function userPassword() { //ejercicio 8
     if (!usuario || !contraseña) {
         alert("Error: Debes ingresar usuario y contraseña");
     } else {
-        alert("Inicio de sesión exitoso")
+        alert("Inicio de sesión exitoso");
     }
 }
 

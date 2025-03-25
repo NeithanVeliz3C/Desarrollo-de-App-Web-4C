@@ -22,3 +22,8 @@ button{
 section p{
     max-width: 200px;
 }
+
+.btn-par{
+    position: relative;
+    right: 30px;
+}
