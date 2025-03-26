@@ -9,7 +9,7 @@ function pares() { //ejercicio 14
 
 function imc() { //ejercicio 15
     let peso = prompt("Ingresa tu peso:");
-    let altura = prompt("Ingresa tu altuira:");
+    let altura = prompt("Ingresa tu altura:");
     let imc = peso / (altura * altura);
     if (imc < 18.5) {
         alert("Bajo peso");
