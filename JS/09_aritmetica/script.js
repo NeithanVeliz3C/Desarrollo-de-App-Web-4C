@@ -21,9 +21,9 @@ function imc() { //ejercicio 15
 }
 
 function promedio() { //ejercicio 16
-    let nota1 = prompt("ingrese tu nota:");
-    let nota2 = prompt("ingrese tu peso:");
-    let nota3 = prompt("ingrese tu peso:");
+    let nota1 = prompt("Ingresa tu nota:");
+    let nota2 = prompt("Ingresa tu peso:");
+    let nota3 = prompt("Ingresa tu peso:");
     let promedio = (nota1 + nota2 + nota3) / 3;
     if (promedio <= 4.0) {
         alert("Reprobado");
