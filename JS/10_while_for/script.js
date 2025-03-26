@@ -49,7 +49,7 @@ function sumaNumeros() {
     let suma = 0;
     let array = [];
     for(let i = 1; i <= 5; i++){
-        suma += i;
+        suma += i; //sumar i en cada iteración 
         array.push(i);
     }
     alert(suma)
