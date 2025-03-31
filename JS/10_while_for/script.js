@@ -27,22 +27,23 @@ function bucleDos() { //ejercicio 2 100 al 1
 }
 
 function contarNumeros() { //ejercicio 1
-    let count = 1; 
     let n = parseInt(prompt("Ingresa un número entero:"));
+    let count = 1; 
     let array = [];
     while(count <= n) {
-        array.push(count);
-        count++;
+        array.push(count); //Insertar un valor al final del array
+        count++; //incrementa 1 al contador
     }
-    alert(`Los números son: ${array.join(" - ")}`);
+    alert(`Contando: ${array.join(" - ")}`);
 }
 
 function cuentaRegresiva() { //ejercicio 2
-    let count = parseInt(prompt("Ingresa un número entero:"));
+    let n = parseInt(prompt("Ingresa un número entero:"));
+    let limite =  1;
     let array = [];
-    while(count >= 1) {
-        array.push(count);
-        count--;
+    while(limite <= n) {
+        array.push(n); 
+        n--; //disminuye 1 al contador (n)
     }
     alert(`La cuenta regresiva es: ${array.join(" - ")}`);
 }
