@@ -60,7 +60,7 @@ function sumaNumeros() { //ejercicio 3
 }
 
 function multiplosDos() { //ejercicio 4
-    let n = parseInt(prompt("Ingresa un nuúmero límite:"));
+    let n = parseInt(prompt("Ingresa un número límite:"));
     for (let i = 1; i <= n; i++) {
         if (i % 2 === 0){
             console.log(i);
