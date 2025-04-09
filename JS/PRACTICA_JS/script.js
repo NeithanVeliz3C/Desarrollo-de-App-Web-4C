@@ -37,10 +37,14 @@ function numIngresados() { //ejercicio 4
     alert("El resultado de la suma es:" + " " + suma);
 }
 
-function numSuma () {
+function numSuma () { //ejercicio 5
     let n = parseInt(prompt("¿Cuántos números deseas sumar?"));
     let suma = 0;
     for (let i = 1; i <= n; i++) {
         let num = parseInt(prompt("Ingresa el número" + i + ":"));
+        suma += num;
     }
+    alert("La suma de los números es:" + suma);
 }
+
+function 
