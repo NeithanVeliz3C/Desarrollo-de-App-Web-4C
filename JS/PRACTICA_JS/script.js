@@ -47,4 +47,28 @@ function numSuma () { //ejercicio 5
     alert("La suma de los números es:" + suma);
 }
 
-function 
+function numOperatoria() { //ejercicio 6
+    let num1 = parseInt(prompt("Ingresa el primer número:"));
+    let num2 = parseInt(prompt("Ingresa el segundo número:"));
+    let opcion = prompt("Elija una operación para realizar:\n" + "Suma\n" + "Resta\n" + "Multiplicación\n" + "División\n");
+    let resultado;
+    switch (opcion){
+        case "Suma":
+            resultado = num1 + num2;
+            alert("El resultado de la suma es:" + " " + resultado);
+            break;
+        case "Resta":
+            resultado = num1 - num2;
+            alert("El resultado de la resta es:" + " " + resultado);
+            break;
+        case "Multiplicación":
+            resultado = num1 * num2;
+            alert("El resultado de la multiplicación es:" + " " + resultado);
+            break;
+        case "División":
+            resultado = num1 / num2;
+            alert("El resultado de la división es:" + " " + resultado);
+            break;
+    }
+}
+
