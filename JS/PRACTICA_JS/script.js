@@ -76,7 +76,7 @@ function sumarNumerosPares() { //ejercicio 7
     let N = parseInt(prompt("Ingrese la cantidad de números pares a sumar:"));
     let suma = 0;
     for (let i = 1; i <= N; i++) {
-        const num = parseFloat(prompt(`Ingrese el número par ${i}:`));
+        let num = parseInt(prompt(`Ingrese el número par ${i}:`));
         if (num % 2 === 0) {
             suma += num;
         } else {
@@ -88,7 +88,7 @@ function sumarNumerosPares() { //ejercicio 7
 }
 
 function sumarPares(){ //ejercicio 8
-    let n = parseInt(prompt("Ingresa la cantidad de números pares a sumar:")); 
+    let n = parseInt(prompt("Ingresa hasta que número par deseas sumar:")); 
     let suma = 0; 
     let count = 0; 
     let numeroPar = 2; 
@@ -102,8 +102,17 @@ function sumarPares(){ //ejercicio 8
     alert("La suma de los " + n + " primeros números pares es: " + suma + `\nLista de números pares: ${array.join(", ")}`);
 }
 
-function sumaImpares() { //ejercicio 9
-    let n = parseInt(prompt("Ingresa la cantidad de números impares a sumar:")); 
+function sumaNumerosImpares() { //ejercicio 9
+    let n = parseInt(prompt("Ingresa la cantidad de números impares a sumar:"));
+    let suma = 0;
+    for (let i = 1; i <= n; i++) {
+        const num = parseInt(prompt(`Ingrese el número ${i}:`));
+        suma += num;
+    }
+    alert("La suma de los números ingresados es: " + suma);
+}
+function sumaImpares() { //ejercicio 10
+    let n = parseInt(prompt("Ingresa hasta que número impar deseas sumar:")); 
     let suma = 0; 
     let count = 0; 
     let numeroImpar = 1; 
@@ -117,42 +126,13 @@ function sumaImpares() { //ejercicio 9
     alert("La suma de los " + n + " primeros números impares es: " + suma + `\nLista de números impares: ${array.join(", ")}`);
 }
 
-function sumaNumeros() {
-    let n = parseInt(prompt("Ingrese la cantidad de números a sumar:"));
-    let suma = 0;
-    for (let i = 1; i <= n; i++) {
-        const num = parseFloat(prompt(`Ingrese el número ${i}:`));
-        suma += num;
-    }
-    alert("La suma de los números ingresados es: " + suma);
-}
 
-function sumaNumerosPares() {
-    let n = parseInt(prompt("Ingrese la cantidad de números pares a sumar:"));
+function sumaMultiplos() { //ejercicio 11
+    let n = parseInt(prompt("¿Cuántos múltiplos de 3 desea sumar?"));
     let suma = 0;
     for (let i = 1; i <= n; i++) {
-        const num = parseFloat(prompt(`Ingrese el número par ${i}:`));
-        if (num % 2 === 0) {
-            suma += num;
-        } else {
-            alert("El número ingresado no es par.");
-            i--;
+        let multiplo = i * 3;
+        suma += multiplo
         }
-    }
-    alert("La suma de los números pares ingresados es: " + suma);
-}
-
-function sumaNumerosImpares() {
-    let n = parseInt(prompt("Ingrese la cantidad de números impares a sumar:"));
-    let suma = 0;
-    for (let i = 1; i <= n; i++) {
-        const num = parseFloat(prompt(`Ingrese el número impar ${i}:`));
-        if (num % 2 !== 0) {
-            suma += num;
-        } else {
-            alert("El número ingresado no es impar.");
-            i--;
-        }
-    }
-    alert("La suma de los números impares ingresados es: " + suma);
+        alert("La suma de los primeros" + " " + n + " " + "múltiplos de 3 es:" + suma);
 }
