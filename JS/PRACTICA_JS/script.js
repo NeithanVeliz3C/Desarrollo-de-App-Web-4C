@@ -136,3 +136,21 @@ function sumaMultiplos() { //ejercicio 11
         }
         alert("La suma de los primeros" + " " + n + " " + "múltiplos de 3 es:" + suma);
 }
+
+function factorial() { //ejercicio 12
+    let n = parseInt(prompt("Ingresa un número:"));
+    let factorial = 1;
+    let i = 1
+    while (i <= n) {
+        factorial *= i;
+        i++
+    }
+    alert("El factorial de" + " " + n + " " + "es:" + " " + factorial);
+}
+
+function conversion() { //ejercicio 13
+    let celsius = parseInt(prompt("Ingresa los grados celsius:"));
+    let fahrenheit = (celsius * 9/5) + 32;
+    alert(celsius + "°C" + " " + "equivalen a" + " " + fahrenheit + "°F");
+}
+
