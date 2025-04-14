@@ -154,3 +154,60 @@ function conversion() { //ejercicio 13
     alert(celsius + "°C" + " " + "equivalen a" + " " + fahrenheit + "°F");
 }
 
+function palabraLarga() { // ejercicio 14
+    let frase = prompt("Ingresa una frase:");
+    let palabras = frase.split(' ');
+    let palabraMasLarga = '';
+    for (let palabra of palabras) {
+        if (palabra.length > palabraMasLarga.length) {
+            palabraMasLarga = palabra;
+        }
+    }
+    alert("La palabra más larga es: " + palabraMasLarga);
+}
+
+function numPrimos() { //ejercicio 15 (pendiente)
+    let n = parseInt(prompt("Ingresa un número:"));
+    if (n < 2) return false;
+    for (let i = 2; i <= numero; i++) {  
+        if (numero % i === 0) {
+            return false;
+        }
+    }
+    alert("El número" + " " + n + " " + "es primo:"  + numPrimos(n));       
+    return true;
+}
+
+function contador() { //ejercicio 16
+    let cadena = prompt("Ingresa una cadena de texto:");
+    let contador = {};
+    for (let caracter of cadena) {
+        if (contador[caracter]) {
+            contador[caracter]++;
+        } else {
+            contador[caracter] = 1;
+        }
+    }
+    let resultado = "Conteo de caracteres:\n";
+    for (let caracter in contador) {
+        resultado += `${caracter}: ${contador[caracter]}\n`;
+    }
+    alert(resultado);
+}
+
+
+function pares() { //ejercicio 17
+    let cantidad = parseInt(prompt("¿Cuántos valores quieres ingresar?"));
+    let pares = [];
+    for (let i = 0; i < cantidad; i++) {
+        let numero = parseInt(prompt(`Ingresa el valor ${i + 1}:`));
+        if (numero % 2 === 0) {
+            pares.push(numero);
+        }
+    }
+    if (pares.length > 0) {
+        alert("Números pares ingresados:" + " " + pares.join(" - "));
+    } else {
+        alert("No se ingresaron números pares.");
+    }
+}
