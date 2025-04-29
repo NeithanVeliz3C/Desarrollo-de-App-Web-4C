@@ -27,13 +27,14 @@ header {
     font-size: 35px;
     display: flex;
     justify-content: flex-start;
+    margin-left: 10px;
 
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 50px;
     margin-left: auto;
     justify-content: flex-end;
 }
@@ -41,7 +42,7 @@ header {
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .btn {
@@ -51,8 +52,9 @@ header {
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 17px;
     box-shadow: 1px 1px 2px 2px #18232e;
+    margin-right: 13px;
 }
 
 .btn:hover {
@@ -71,14 +73,13 @@ main{
     margin: 0 auto;
     margin-top: 40px;
     height: 100vh;
-    outline: solid; 
 }
 
 .left {
     flex: 2;
-    max-width: 620px;
+    max-width: 670px;
     max-height: 400px;
-    outline: solid;
+    margin-right: 60px;
 }
 
 .right {
@@ -87,18 +88,14 @@ main{
     flex-direction: column;
     gap: 20px;
     max-width: 450px;
-    outline: solid;
-    position: relative;
-    left: 200px;
+    margin-left: 40px;
 }
 
-/* PROFILE CARD */
-
 .container {
-    width: 620px;
-    height: 370px;
+    width: 670px;
+    height: 400px;
     background-color: white;
-    border: 2px solid grey;
+    border: solid 1px white;
     border-radius: 10px;
 }
 
@@ -108,10 +105,10 @@ main{
 }
 
 .img1 {
-    width: 140px;
+    width: 150px;
     position: relative;
     bottom: 70px;
-    left: 240px;
+    left: 260px;
 }
 
 .container h2 {
@@ -148,7 +145,7 @@ main{
 .container4 {
     position: relative;
     bottom: 60px;
-    left: 250px;
+    left: 270px;
     margin-top: 10px;
 }
 
@@ -164,7 +161,7 @@ main{
 }
 
 .solicitudes, .conexiones {
-    width: 400px;
+    width: 420px;
     background-color: white;
     box-shadow: 2px 2px 5px 2px #616972;
     border-radius: 5px;
@@ -174,12 +171,13 @@ main{
 
 .header-sc, .header-tc {
     color: black;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px 5px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
 ul {
@@ -193,23 +191,24 @@ ul li {
     margin-bottom: 10px;
 }
 
-.steve, .bill, .richard, .linus, .ada, .grace, 
-.img4, .img5, .img6, .img7 {
+.steve, .bill, .richard, .linus, .ada, .grace {
     width: 40px;
     border-radius: 30px;
     padding: 5px;
     margin-right: 10px;
 }
 
-.img4, .img5, .img6, .img7 {
-    display: flex;
-    justify-content: flex-end
+.img4, .img5, .img6, .img7{
+    width: 40px;
+    position: relative;
+    left: 170px;
 }
 
 .s-nombre, .b-nombre, .r-nombre, .l-nombre, .a-nombre, .g-nombre {
-    font-size: 16px;
+    font-size: 19px;
     font-weight: bold;
     margin-right: 10px;
+    color:#3d3e3f;
 }
 
 .dos-btn, .cinco-btn {
@@ -223,14 +222,5 @@ ul li {
 }
 
 .dos-btn:hover, .cinco-btn:hover {
-    background-color: #b0b0b0;
-}
-
-.ver-mas {
-    border: 2px solid grey;
-}
-
-.ver-mas a {
-    color: #1e5c98;
-    text-decoration: underline;
+    background-color: #c2c2c2;
 }
