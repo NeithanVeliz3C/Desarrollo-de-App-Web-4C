@@ -102,6 +102,8 @@ main{
 .header {
     background-color: #3798dc;
     height: 120px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .img1 {
@@ -178,6 +180,7 @@ main{
     align-items: center;
     font-size: 16px;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
 
 ul {
@@ -198,10 +201,16 @@ ul li {
     margin-right: 10px;
 }
 
-.img4, .img5, .img6, .img7{
-    width: 40px;
+.img4, .img5{
+    width: 30px;
     position: relative;
-    left: 170px;
+    left: 190px;
+}
+
+.img6, .img7{
+    width: 30px;
+    position: relative;
+    left: 195px;
 }
 
 .s-nombre, .b-nombre, .r-nombre, .l-nombre, .a-nombre, .g-nombre {
@@ -219,6 +228,7 @@ ul li {
     font-size: 14px;
     padding: 5px 10px;
     cursor: pointer;
+    margin-right: 30px;
 }
 
 .dos-btn:hover, .cinco-btn:hover {
