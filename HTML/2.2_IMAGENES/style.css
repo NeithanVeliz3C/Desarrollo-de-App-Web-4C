@@ -62,3 +62,26 @@ section img{
 .div-3{
     background-color: white;
 }
+
+.div-4 {
+    background-color: #4c83bb;
+}
+
+.div-4 img{
+    border: solid 1px black;
+}
+
+.div-5 {
+    background-color: #86b7f7;
+}
+
+.div-5 img{
+    border: solid 1px black;
+}
+
+.div-6 {
+    background-color: #c1dafa;
+}
+.div-6 img{
+    border: solid 1px black;
+}
