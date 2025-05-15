@@ -1,32 +1,91 @@
 *{
     padding: 0;
     margin: 0;
-    outline: solid 1px black;
 }
+
+main{
+    width: 40%;
+    height: 100vh;
+    padding: 10px;
+}
+
 .container{
+    width: 100%;
+    height: 50vh;
     display: flex;
-    padding: 50px 150px;
-    background-color: white;
 }
 
-
-.izquierda{
-    height: 100vh;
-    flex:1
-}
-
-.derecha{
-    height: 100vh;
-    flex:1
+div{
+    margin: 6px;
 }
 
 .arriba{
+    display: flex;
+    width: 75%;
     height: 50vh;
+    flex-direction: column;
 }
 
 .uno{
+    flex: 2;
     background-color: #b2b5b4;
-    height: 50vh;
-    width: 30vh;
 }
 
+.dos{
+    flex: 1;
+    background-color: #b2b5b4;
+}
+
+.abajo{
+    display: flex;
+    width: 30%;
+    height: 50vh;
+    flex-direction: column;
+}
+
+.tres{
+    flex: 1;
+    background-color: #b2b5b4;
+}
+
+.cuatro{
+    flex: 1;
+    background-color: #b2b5b4;
+}
+
+.container-2{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    padding-left: 7px;
+    margin-top: 10px;
+}
+
+div{
+    margin: 6px;
+}
+
+.arriba-2{
+    display: flex;
+    width: 30%;
+    height: 46vh;
+    flex-direction: column;
+    background-color: #b2b5b4;
+}
+
+.abajo-2{
+    display: flex;
+    width: 70%;
+    height: 47vh;
+    flex-direction: column;
+}
+
+.cinco{
+    flex: 1;
+    background-color: #b2b5b4;
+}
+
+.seis{
+    flex: 1;
+    background-color: #b2b5b4;
+}
