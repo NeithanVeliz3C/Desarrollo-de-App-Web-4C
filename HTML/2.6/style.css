@@ -1,68 +1,112 @@
-*{
+/* Reseteo básico y fuente */
+* {
     margin: 0;
     padding: 0;
-    outline: solid 1px black;
-    font-family: sans-serif;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-body{
-    background-color: #FDF6EC;
+body {
+    background-color: #F0F2F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
-nav{
-    background-color: #34495E;
-    height: 15vh;
+/* Estilos del Encabezado */
+header {
+    background-color: #34495e;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-h1, h2{
+header h1 {
     color: #ffff;
+    margin-bottom: 5px;
+    font-size: 30px;
 }
 
-p{
+header p {
     color: #ffff;
     font-size: 15px;
     margin-top: 10px;
 }
 
-main{
+/* Contenedor Principal (Main) */
+main {
     display: flex;
-    margin-top: 40px;
+    flex-direction: column;
+    margin-top: 50px;
     background-color: #ffff;
-    margin-left: 170px;
-    width: 150vh;
-    height: 45vh;
-}
-
-.arriba{
-    display: flex;
-    background-color: #E67E22;
-    height: 18vh;
+    width: 90%;
+    max-width: 1000px;
     border-radius: 10px;
-    justify-content: center;
-    margin: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    gap: 30px;
 }
 
-.abajo{
+/* Sección Superior del Contenedor (Arriba) */
+.arriba {
     display: flex;
-    background-color: #D35400;
-    justify-content: space-between;
+    flex-direction: column;
+    background-color: #e67e22;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 20px;
 }
 
-.uno{
-    width: 60px;
-    height: 40px;
+.arriba h2 {
+    color: #ffff;
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-.dos{
-    width: 40px;
-    height: 40px;
+.arriba p {
+    color: #ffff;
+    font-size: 15px;
 }
 
-.tres{
-    width: 40px;
-    height: 40px;
+/* Sección Inferior de las Cajas (Abajo) */
+.abajo {
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap; /* Esencial para que las cajas se envuelvan */
+}
+
+/* Estilos de las Cajas Individuales (Uno, Dos, Tres) */
+.uno, .dos, .tres {
+    background-color: #d35400;
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1 1 280px; /* Permite crecer, encoger y establece un ancho base */
+    max-width: 350px;
+    height: auto;
+}
+
+.uno h2, .dos h2, .tres h2 {
+    color: #ffff;
+    margin-top: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.uno p, .dos p, .tres p {
+    color: #ffff;
+    font-size: 13px;
 }
