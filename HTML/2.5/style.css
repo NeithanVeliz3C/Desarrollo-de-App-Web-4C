@@ -14,63 +14,66 @@ div{
     background-color: #B3B5B4;
 }
 
-.right-left, .right-right{
+.izquierda, .derecha{
     background-color: white;
 }
 
-.all-container{
+main{
     display: flex;
     height: 100vh;
+    width: 40%;
 }
 
-.right-all{
+.container{
     flex: 1;
     display: flex;
+    margin-top: 3vh;
     height: 100vh;
     flex-direction: column;
 }
 
-.B1{
+.dos, .tres{
     flex: 1;
     outline: white solid 1.5vh;
     height: 25vh;
     width: 25vh;
 }
 
-.right-all{
+.container{
     display: flex;
     flex-direction: row;
 }
 
-.right-left{
+.izquierda{
     flex: 2;
     display: flex;
     flex-direction: column;
 }
 
-.right-right{
+.derecha{
     flex: 2;
 }
 
 
-.c1x2{
-    height: 27vh;
+.cinco{
+    height: 25vh;
     flex: 1;
-    margin-top: 3vh;
     outline: solid white ;
+    width: 38vh;
 }
 
-.A1{
-    height: 67vh;
+.uno{
+    height: 70vh;
     flex: 1;
 }
 
-.c3x5{
+.seis{
     flex: 1;
-    height: 50vh;
+    height: 70vh;
     margin-top: 3vh;
+    width: 38vh;
 }
 
-.B2{
+.cuatro{
     outline: solid white 2.5vh;
 }
