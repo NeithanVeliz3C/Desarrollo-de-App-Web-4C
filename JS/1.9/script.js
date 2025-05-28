@@ -8,11 +8,19 @@ function registroParticipantes() { //ejercicio 1
         nombre = prompt("Ingresa el nombre del participante (o 'salir' para terminar):");
     }
     if (cantidad <= 5) {
-        alert(`Participantes registrados: ${participantes.join(", ")}\nCantidad de participantes: ${cantidad}`);
+        alert(`Resultado se muestra en la consola`);
+        console.log("Total de participantes:", participantes.length);
+        console.log("Lista de participantes:", participantes.join(", "));
     }
 }
 
 function cajaRegistradora() { //ejercicio 2
-    let productos = [frutilla, carne, leche, pan];
-    for (let )
+    let productos = ["frutilla", "carne", "leche", "pan"];
+    for (let i = 0; i < 5; i++)
+        if (productos.length > 0) {
+    let vendido = productos.pop();
+    console.log("Producto vendido:", vendido);
+    } else {
+        console.log("Sin stock");
+    }
 }
