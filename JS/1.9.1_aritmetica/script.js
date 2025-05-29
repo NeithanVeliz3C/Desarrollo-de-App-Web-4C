@@ -13,19 +13,21 @@ function calcularPromedio() { //ejercicio 3
     }
 }
 
-function pares(){
+function pares() {
     let numeros = [];
     let pares = [];
     let impares = [];
     for (let i = 0; i < 6; i++) {
         let num = parseInt(prompt(`Ingresa un número ${i + 1}:`));
         numeros.push(num);
-    if (numero % 2 === 0) {
-        pares.push(numero);
-    } else {
-        impares.push(numero);
-    }
+        
+        if (num % 2 === 0) {
+            pares.push(num);
+        } else {
+            impares.push(num);
+        }
     }
     alert(`Números ingresados: ${numeros.join(", ")}\nPares: ${pares.join(", ")}\nImpares: ${impares.join(", ")}`);
 }
+
 
