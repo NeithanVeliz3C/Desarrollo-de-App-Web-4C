@@ -16,14 +16,14 @@ function agregarElementoCompra(){
     //appendChild inserta valor hijo en Padre
     // resultado(<ul>(item(<li></li>))</ul>)
     resultado.appendChild(item);
-}
+} 
 let carrito = []; //ejercicio 2
 function mostrarListaCompra(){
     const lista = document.getElementById("resultado2");
     lista.innerHTML = ""; // Limpiar la lista antes de mostrar los elementos
     for (let i = 0; i < carrito.length; i++) {
         const item = document.createElement("li");
-        item.innerText = ${carrito[i]};
+        item.innerText = `${carrito[i]}`;
         lista.appendChild(item);
     }
     const input = document.getElementById("lista2");
@@ -38,14 +38,30 @@ function mostrarListaCompra(){
 function eliminarUltimoElemento() {
     if (carrito.length > 0) {
         carrito.pop(); // Elimina el último elemento del arreglo
+        mostrarListaCompra(); // ← Esto actualiza la lista en pantalla
     }
 }
 
-/*
-let colores=["rojo","azul"]; //ejercicio 3
-colores.unshift("amarillo");
+// Ejercicio 3: Agregar al inicio de la lista
+function mostrarListaColores() {
+    const lista = document.getElementById("resultado3");
+    lista.innerHTML = ""; // Limpiar la lista antes de mostrar los elementos
+    for (let i = 0; i < colores.length; i++) {
+        const item = document.createElement("li");
+        item.innerText = `${colores[i]}`;
+        lista.appendChild(item);
+    }
+}
 
-const botonTres = document.getElementById("botonTres");
-botonTres.addEventListener("click", () => {
-    console.log(colores); 
-}); */
+function agregarInicio() {
+    const input = document.getElementById("lista3");
+    const valor = input.value.trim();
+
+    if (valor === "") {
+        return;
+    };
+
+    listaColores.unshift(valor);
+    input.value = "";
+    input.focus();
+}
