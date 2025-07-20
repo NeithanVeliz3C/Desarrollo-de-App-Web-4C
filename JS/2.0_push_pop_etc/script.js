@@ -255,13 +255,27 @@ function atenderCliente() {
     mostrarCola();
 }
 
-//ejercicio 9
 let nombres = ["Pedro", "Juan", "Luis"];
 
 function reordenarNombres() {
-    nombres.pop();           // Quita Luis
-    nombres.unshift("Mateo"); // Agrega al inicio
-    nombres.push("Ana");     // Agrega al final
+    const input = document.getElementById("lista9");
+    const valor = input.value.trim();
+
+    if (valor === "") return;
+
+    nombres.pop(); // Eliminar siempre el último elemento
+
+    if (valor === "Mateo") {
+        nombres.unshift(valor); // Agrega Mateo al inicio
+    } else if (valor === "Ana") {
+        nombres.push(valor); // Agrega Ana al final
+    } else {
+        // No se agrega nada si no es Mateo ni Ana
+        alert("Solo puedes ingresar 'Mateo' o 'Ana'");
+    }
+
+    input.value = "";
+    input.focus();
 
     const lista = document.getElementById("resultado9");
     lista.innerHTML = "";
@@ -272,6 +286,7 @@ function reordenarNombres() {
         lista.appendChild(li);
     }
 }
+
 
 //ejercicio 10
 let pila = [];
