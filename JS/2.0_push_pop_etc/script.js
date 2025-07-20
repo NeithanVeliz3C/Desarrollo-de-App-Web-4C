@@ -116,7 +116,7 @@ let numeros = [10, 20, 30];
 function mostrar_lista_numeros() {
     const lista = document.getElementById("resultado5");
     lista.innerHTML = ""; // Limpiar la lista antes de mostrar los elementos
-    
+
     for (let i = 0; i < numeros.length; i++) {
         const li = document.createElement("li");
         li.className = "list-group-item d-flex justify-content-between align-items-center mb-2";
@@ -165,30 +165,166 @@ function agregar_ultimo_elemento_ej5() {
     mostrar_lista_numeros();
 }
 
-//ejercico 6
+// ejercicio 6
 let orden = [];
-function mostrar_lista_orden() {
-    const lista = document.getElementById("resultado6");
-    lista.innerHTML = ""; // Limpiar la lista antes de mostrar los elementos
 
+function mostrarListaOrden() {
+    const lista = document.getElementById("resultado6");
+    lista.innerHTML = "";
     for (let i = 0; i < orden.length; i++) {
         const li = document.createElement("li");
-        li.className = "list-group-item d-flex justify-content-between align-items-center mb-2";
-        li.textContent = `- ${orden[i]}`;
+        li.className = "list-group-item";
+        li.textContent = orden[i];
         lista.appendChild(li);
     }
 }
 
-function agregar_inicio_orden() {
+function agregarInicioOrden() {
     const input = document.getElementById("lista6");
-    const valor = input.value.trim(); // guardo valor sin espacios extras
-
-    if (valor === "") {
-        return;
-    } // Agregar valor al final
-
+    const valor = input.value.trim();
+    if (valor === "") return;
     orden.unshift(valor);
     input.value = "";
-    input.focus(); // agrega foco hacia el input
-    mostrar_lista_orden();
+    input.focus();
+    mostrarListaOrden();
+}
+
+function cargarOrdenInverso() {
+    orden = []; // Limpia antes de cargar
+    orden.unshift(3);
+    orden.unshift(2);
+    orden.unshift(1);
+    mostrarListaOrden();
+}
+
+//ejercicio 7
+let historial = [];
+
+function mostrarHistorial() {
+    const lista = document.getElementById("resultado7");
+    lista.innerHTML = "";
+    for (let i = 0; i < historial.length; i++) {
+        const li = document.createElement("li");
+        li.className = "list-group-item";
+        li.textContent = historial[i];
+        lista.appendChild(li);
+    }
+}
+
+function agregarMensajeHistorial() {
+    const input = document.getElementById("lista7");
+    const valor = input.value.trim();
+    if (valor === "") return;
+    historial.push(valor);
+    input.value = "";
+    input.focus();
+    mostrarHistorial();
+}
+
+function eliminarUltimoMensaje() {
+    historial.pop();
+    mostrarHistorial();
+}
+
+//ejercicio 8
+let cola = ["Cliente1", "Cliente2", "Cliente3"];
+
+function mostrarCola() {
+    const lista = document.getElementById("resultado8");
+    lista.innerHTML = "";
+    for (let i = 0; i < cola.length; i++) {
+        const li = document.createElement("li");
+        li.className = "list-group-item";
+        li.textContent = cola[i];
+        lista.appendChild(li);
+    }
+}
+
+function agregarClienteCola() {
+    const input = document.getElementById("lista8");
+    const valor = input.value.trim();
+    if (valor === "") return;
+    cola.push(valor);
+    input.value = "";
+    input.focus();
+    mostrarCola();
+}
+
+function atenderCliente() {
+    cola.shift(); // Elimina el primero
+    mostrarCola();
+}
+
+//ejercicio 9
+let nombres = ["Pedro", "Juan", "Luis"];
+
+function reordenarNombres() {
+    nombres.pop();           // Quita Luis
+    nombres.unshift("Mateo"); // Agrega al inicio
+    nombres.push("Ana");     // Agrega al final
+
+    const lista = document.getElementById("resultado9");
+    lista.innerHTML = "";
+    for (let i = 0; i < nombres.length; i++) {
+        const li = document.createElement("li");
+        li.className = "list-group-item";
+        li.textContent = nombres[i];
+        lista.appendChild(li);
+    }
+}
+
+//ejercicio 10
+let pila = [];
+let colaNueva = [];
+
+function mostrarPila() {
+    const lista = document.getElementById("resultado10a");
+    lista.innerHTML = "";
+    for (let i = 0; i < pila.length; i++) {
+        const li = document.createElement("li");
+        li.className = "list-group-item";
+        li.textContent = pila[i];
+        lista.appendChild(li);
+    }
+}
+
+function agregarElementoPila() {
+    const input = document.getElementById("lista10a");
+    const valor = input.value.trim();
+    if (valor === "") return;
+    pila.push(valor);
+    input.value = "";
+    input.focus();
+    mostrarPila();
+}
+
+function quitarElementoPila() {
+    pila.pop();
+    mostrarPila();
+}
+
+function mostrarColaNueva() {
+    const lista = document.getElementById("resultado10b");
+    lista.innerHTML = "";
+    for (let i = 0; i < colaNueva.length; i++) {
+        const li = document.createElement("li");
+        li.className = "list-group-item";
+        li.textContent = colaNueva[i];
+        lista.appendChild(li);
+    }
+}
+
+function agregarElementoCola() {
+    const input = document.getElementById("lista10b");
+    const valor = input.value.trim();
+    if (valor === "") return;
+    colaNueva.push(valor);
+    input.value = "";
+    input.focus();
+    mostrarColaNueva();
+}
+
+function quitarElementoCola() {
+    colaNueva.shift();
+    mostrarColaNueva();
 }
