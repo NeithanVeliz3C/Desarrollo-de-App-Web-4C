@@ -200,30 +200,42 @@ function cargarOrdenInverso() {
 //ejercicio 7
 let historial = [];
 
+function agregarHistorial() {
+    const input = document.getElementById("lista7");
+    const valor = input.value.trim();
+
+    if (valor === "") return;
+
+    historial.push(valor); // Agrega mensaje al final
+    input.value = "";
+    input.focus();
+
+    mostrarHistorial();
+}
+
+function eliminarUltimoMensaje() {
+    if (historial.length === 0) return;
+
+    const eliminado = historial.pop(); // Elimina el último mensaje
+
+    // Mostrar mensaje eliminado
+    const alerta = document.getElementById("mensajeEliminado7");
+    alerta.textContent = `Mensaje eliminado: "${eliminado}"`;
+    alerta.classList.remove("d-none");
+
+    mostrarHistorial();
+}
+
 function mostrarHistorial() {
     const lista = document.getElementById("resultado7");
     lista.innerHTML = "";
+
     for (let i = 0; i < historial.length; i++) {
         const li = document.createElement("li");
         li.className = "list-group-item";
         li.textContent = historial[i];
         lista.appendChild(li);
     }
-}
-
-function agregarMensajeHistorial() {
-    const input = document.getElementById("lista7");
-    const valor = input.value.trim();
-    if (valor === "") return;
-    historial.push(valor);
-    input.value = "";
-    input.focus();
-    mostrarHistorial();
-}
-
-function eliminarUltimoMensaje() {
-    historial.pop();
-    mostrarHistorial();
 }
 
 //ejercicio 8
