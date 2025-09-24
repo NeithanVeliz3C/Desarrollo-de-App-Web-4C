@@ -11,4 +11,6 @@ function turnOff(element) {
     }
 }
 
-//botòn de eliminar
+//botón de eliminar
+
+
