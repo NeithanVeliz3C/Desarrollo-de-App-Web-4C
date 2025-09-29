@@ -82,7 +82,7 @@ body {
     align-items: center;
     margin-right: 20px;
     flex-shrink: 0;
-    width: 150px; /* Ancho fijo para la columna de la izquierda */
+    width: 150px; 
 }
 
 .contenido {
@@ -119,7 +119,7 @@ body {
 
 .definition {
     font-size: 20px;
-    margin-top: 5px; /* Ajuste de margen superior */
+    margin-top: 5px; 
     margin-bottom: 0;
     width: 100%;
 }
