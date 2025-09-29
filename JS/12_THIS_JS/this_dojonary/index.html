@@ -12,7 +12,7 @@
         <div class="label">
             <input type="text" class="form-control" placeholder="Search">
         </div>
-        <button id="login-btn" type="button" class="btn btn-primary">Login</button>
+        <button id="login-btn" type="button" class="btn btn-primary" onclick="login(this)">Login</button>
     </nav>
 
     <div class="container">
@@ -24,7 +24,7 @@
                         <span class="label-word">noun</span>
                         <span class="plural-text">Plural: ninjas</span>
                     </div>
-                    <button id="like-btn-1" class="like-btn">13 likes</button>
+                    <button id="like-btn-1" class="like-btn" onclick="likeBtn(this)"><span id="span">13 likes</span></button>
                 </div>
                 <div class="contenido">
                     <p class="definition">A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
@@ -37,7 +37,7 @@
                         <span class="label-word">noun</span>
                         <span class="plural-text">Plural: ninjas</span>
                     </div>
-                    <button id="like-btn-2" class="like-btn">37 likes</button>
+                    <button id="like-btn-2" class="like-btn" onclick="likeBtn(this)"><span id="span">37 likes</span></button>
                 </div>
                 <div class="contenido">
                     <p class="definition">A programmer who breaks down problems with <a href="#">zen-like</a> focus</p>
@@ -48,7 +48,7 @@
         <div class="derecha">
             <div class="aside-box">
                 <p class="aside-title">Dojonary is defined by <span class="you">YOU</span></p>
-                <button id="add-def-btn" class="add-def-btn">Add Definition</button>
+                <button id="add-def-btn" class="add-def-btn" onclick="hide(this)">Add Definition</button>
             </div>
         </div>
     </div>
