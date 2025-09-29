@@ -1,120 +1,175 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
 }
 
-a{
-    color: #265c9e;
-}
-
-nav{
-    background-color: #cccccc;
-    color: black;
+nav {
+    background-color: #f0f0f0;
+    border: 2px solid black;
+    border-top: none;
     padding: 15px;
-    height: 30px;
+    height: 70px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
 }
 
-body{
-    font-family: Arial, sans-serif;
-    padding: 0px;
+.nav-bar {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.label {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.label input {
+    border: 2px solid black;
+    padding: 5px 10px;
+    height: 35px;
+    width: 100%;
+    font-size: 16px;
+}
+
+nav button {
+    background-color: #2b78e4;
+    color: white;
+    border: 2px solid black;
+    height: 35px;
+    padding: 0 15px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 2px 2px 0 black;
+}
+
+body {
     background-color: white;
 }
 
-.titulo{
-    color: black;
-    text-align: center;
-    font-family: 'comic sans ms';
-    font-size: 26px;
-}
-
-.container{
+.container {
     display: flex;
-    justify-content: center;
+    width: 1000px;
+    margin: 20px auto;
+    justify-content: space-between;
 }
 
-.perfil{
-    border: solid 3px black;
-    height: 180px;
-    width: 130px;
-    margin-top: 20px;
+.izquierda {
+    flex: 2;
     margin-right: 20px;
+}
+
+.derecha {
+    flex: 1;
+}
+
+.card {
+    border: 3px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.columna-izquierda {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    width: 150px; /* Ancho fijo para la columna de la izquierda */
 }
 
-.perfil a{
-    margin-bottom: 20px;
-}
-
-.perfil p{
-    font-size: 20px;
-}
-
-.perfil-img{
-    width: 60px;
-    margin-bottom: 20px;
-}
-
-.card{
-    border: 2px solid black;
-    padding: 16px;
-    width: 320px;
-    height: 80px;
-    position: relative;
-    box-shadow: 2px 2px 0 black;
-    margin-top: 20px;
-}
-
-.card p{
-    margin-top: 20px;
-}
-
-.texto-principal{
+.contenido {
+    flex-grow: 1;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.info-palabra {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.label-word {
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.plural-text {
+    font-size: 16px;
+}
+
+.definition {
+    font-size: 20px;
+    margin-top: 5px; /* Ajuste de margen superior */
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.definition a {
+    color: #265c9e;
+    text-decoration: underline;
+}
+
+.like-btn {
+    background-color: #ffd966;
+    border: 3px solid black;
+    padding: 8px 15px;
+    box-shadow: 4px 4px 0 black;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.aside-box {
+    border: 3px solid black;
+    padding: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 8px;
+    text-align: center;
 }
 
-.user{
+.aside-title {
+    font-size: 30px;
+}
+
+.you {
     font-weight: bold;
 }
 
-.likes{
-    margin-left: auto;
-    margin-right: 10px;
-}
-
-#like-button{
-    background-color: #ffd966;
-    border: none;
-    padding: 6px 12px;
-    box-shadow: 2px 2px 0 black;
+.add-def-btn {
+    background-color: #93c47d;
+    color: black;
+    border: 3px solid black;
+    padding: 8px 15px;
+    box-shadow: 4px 4px 0 black;
     cursor: pointer;
-    font-weight: bold;
-}
-
-#like-button2{
-    background-color: #ffd966;
-    border: none;
-    padding: 6px 12px;
-    box-shadow: 2px 2px 0 black;
-    cursor: pointer;
-}
-
-#like-button3{
-    background-color: #ffd966;
-    border: none;
-    padding: 6px 12px;
-    box-shadow: 2px 2px 0 black;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.text{
-    margin-top: 8px;
+    font-size: 18px;
+    width: 100%;
 }

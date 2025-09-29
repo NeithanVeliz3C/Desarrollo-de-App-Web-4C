@@ -1,4 +1,3 @@
-<!--Avance dojonary-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,39 +6,49 @@
     <link rel="stylesheet" href="static/css/style.css">
     <title>Dojonary</title>
 </head>
-<nav>
-    <h1 class="nav-bar">Dojonary</h1>
-    <div class="label">
-        <input type="text" class="form-control" id="myInput" placeholder="Search">
-    </div>
-    <button type="button" class="btn btn-primary">Login</button>
-</nav>
 <body>
-    <h1 class="titulo">Your feed</h1>
+    <nav>
+        <h1 class="nav-bar">Dojonary</h1>
+        <div class="label">
+            <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button id="login-btn" type="button" class="btn btn-primary">Login</button>
+    </nav>
+
     <div class="container">
         <div class="izquierda">
-            <div class="perfil">
-                <img class="perfil-img" src="img/perfil_foto.png" alt="Perfil">
-                <a href="#">Add an avatar</a>
-                <p>James Doe</p>
+            <div class="card">
+                <div class="columna-izquierda">
+                    <h2>ninja</h2>
+                    <div class="info-palabra">
+                        <span class="label-word">noun</span>
+                        <span class="plural-text">Plural: ninjas</span>
+                    </div>
+                    <button id="like-btn-1" class="like-btn">13 likes</button>
+                </div>
+                <div class="contenido">
+                    <p class="definition">A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="columna-izquierda">
+                    <h2>ninja</h2>
+                    <div class="info-palabra">
+                        <span class="label-word">noun</span>
+                        <span class="plural-text">Plural: ninjas</span>
+                    </div>
+                    <button id="like-btn-2" class="like-btn">37 likes</button>
+                </div>
+                <div class="contenido">
+                    <p class="definition">A programmer who breaks down problems with <a href="#">zen-like</a> focus</p>
+                </div>
             </div>
         </div>
+
         <div class="derecha">
-            <div class="card">
-                <div class="texto-principal">
-                    <span class="user">Neil M</span>
-                    <span class="likes"><span id="contador">9</span>like(s)</span>
-                    <button id="like-button">Like</button>
-                </div>
-                <p class="text">I just set up this new discord bot, let me know what you all think.<a href="#">link</a></p>
-            </div>
-            <div class="card">
-                <div class="texto-principal">
-                    <span class="user">Nichole K</span>
-                    <span class="likes"><span id="contador2">12</span>like(s)</span>
-                    <button id="like-button2">Like</button>
-                </div>
-                <p>Just finished my <a href="#">next comic</a>, check it out!</p>
+            <div class="aside-box">
+                <p class="aside-title">Dojonary is defined by <span class="you">YOU</span></p>
+                <button id="add-def-btn" class="add-def-btn">Add Definition</button>
             </div>
         </div>
     </div>
