@@ -19,5 +19,5 @@ function login(element) {
 
 
 function hide(element) {
-    element.style.display = "none";
+    element.remove();
 }
