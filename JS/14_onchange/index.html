@@ -8,9 +8,32 @@
 </head>
 <body>
     <nav>
-        
+        <h1>Dojoweather</h1>
+        <div class="opciones">
+            <h2>Burbank</h2>
+            <h2>Chicago</h2>
+            <h2>Dallas</h2>
+        </div>
     </nav>
+    <div class="container">
+        <div class="title">
+            <h1>San Jose</h1>
+            <div class="temperature">
+                <h3>show temperature in</h3>
+                <select name="temp" id="temp" onchange="cambioTemp(this)">
+                    <option value="celsius">°C</option>
+                    <option value="fahrenheit">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="dias">
+            <div class="today">
+                <h2>Today</h2>
+                <img src="resources/img/some_rain.png" alt="some_rain">
+            </div>
 
+        </div>
+    </div>
     <script src="static/js/script.js"></script>
 </body>
 </html>

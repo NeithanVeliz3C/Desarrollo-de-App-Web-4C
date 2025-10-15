@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: solid 1px black;
+}
+
+body{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    width: 160vh;
+    height: 160vh;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    margin: 0 auto; 
+}
+
+nav{
+    background-color: #9fc5f8;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15vh;
+    padding-right: 15vh;
+    height: 12vh;
+    width: 100%;
+}
+
+nav h1{
+    font-size: 40px;
+}
+
+.opciones{
+    display: flex;
+    gap: 50px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.container{
+    width: 130vh;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    margin: 0 auto; 
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    
+}
+
+.temperature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
