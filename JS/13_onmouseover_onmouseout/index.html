@@ -25,23 +25,20 @@
         <div class="col-l">
             <!-- this is a placeholder replace it with a real video -->
             <figure class="placeholder">
-                <svg style="text-anchor:middle;" width="550" height="330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 720x400" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#868e96"></rect>
-                    <text x="50%" y="50%" dy=".3em" fill="#dee2e6" >Replace Me!</text>
-                </svg>
+                <video width="560" height="315" src="resources/video/videoplayback.mp4" poster="resources/img/miniatura.png" alt="video placeholder" id="video_1" controls loop class="vid-l"
+                onmouseover="this.play()" onmouseout="this.pause()" onclick="cambioVideo(this)"></video>
             </figure>
             <!-- video info -->
             <div class="row">
                 <div class="start">
-                    <h1>Example Video Title</h1>
+                    <h1 id="titulo_main">¿EL CONJURO está BASADO en HECHOS o FABULACIONES? | Relato y Reflexiones</h1>
                     <h3>1.3K Views | June, 18, 2021</h3>
                     <div class="user">
-                        <img src="assets/user.png" alt="user-circle" class="avatar-s">
+                        <img src="resources/img/perfil_foto.png" alt="user-circle" class="avatar-s">
                         <span class="user-name">Example User Name</span>
                     </div>
                 </div>
-                <button class="btn">Subscribe</button>
+                <button class="btn-2">Subscribe</button>
             </div>
         </div>
         <!-- right column -->
@@ -49,27 +46,27 @@
             <h3 class="sub-header">Up Next</h3>
 
             <div class="video-small">
-                <img src="assets/video-placeholder.png" alt="video placeholder" class="vid-s">
+                <video id="video" src="resources/video/video1.mp4" alt="video placeholder" class="vid-s" onmouseover="this.play()" onmouseout="this.pause()" onclick="cambioVideo(this)"></video>
                 <span class="video-title">Not a Rick Roll</span>
             </div>
 
             <div class="video-small">
-                <img src="assets/video-placeholder.png" alt="video placeholder" class="vid-s">
+                <video id="video" src="resources/video/video2.mp4" alt="video placeholder" class="vid-s" onmouseover="this.play()" onmouseout="this.pause()" onclick="cambioVideo(this)"></video>
                 <span class="video-title">10 Facts About ET's Cat!</span>
             </div>
 
             <div class="video-small">
-                <img src="assets/video-placeholder.png" alt="video placeholder" class="vid-s">
+                <video id="video" src="resources/video/video3.mp4" alt="video placeholder" class="vid-s" onmouseover="this.play()" onmouseout="this.pause()" onclick="cambioVideo(this)"></video>
                 <span class="video-title">5 Cosplay Tips</span>
             </div>
 
             <div class="video-small">
-                <img src="assets/video-placeholder.png" alt="video placeholder" class="vid-s">
+                <video id="video" src="resources/video/video4.mp4" alt="video placeholder" class="vid-s" onmouseover="this.play()" onmouseout="this.pause()" onclick="cambioVideo(this)"></video>
                 <span class="video-title">Boy Battles Dinobot in Thunderdome</span>
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="static/js/script.js"></script>
 </body>
 </html>
