@@ -43,11 +43,87 @@ body{
 
 .col-r{
     margin-left: 30px;
-    width: 30%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
 }
 .btn{
     height: 30px;
     width: 80px;
-    border: solid;
+    border: solid 1px black;
+    box-shadow: 4px 4px 0 black;
+    background-color:#9900ff;
+    color: white;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 15px;
 }
 
+.row{
+    display: flex;
+    justify-content: space-between;
+    max-width: 560px;
+}
+
+.start{
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.start h1{
+    font-size: 4vh;
+    font-weight: bold;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+.start h1 h3{
+    margin-top: 20px;
+}
+
+.btn-2{
+    height: 30px;
+    width: 100px;
+    margin-top: 20px;
+    background-color: #9900ff;
+    color: white;
+    border: solid 1px black;
+    box-shadow: 4px 4px 0 black;
+    margin-right: 10px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 18px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+    color: #9900ff;
+    font-size: 18px;
+    font-weight:bold ;
+}
+
+.video-small{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;    
+}
+
+.vid-s{
+    width: 150px;
+    height: 100px;
+}
+
+.video-title{
+    font-size: 3vh;
+    font-weight: bold;
+    align-content: center;
+    justify-content: center;
+    text-align: start;
+}
+
+.video-small span{
+    margin-left: 3vh;
+}
