@@ -7,8 +7,8 @@
 
 body{
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    width: 160vh;
-    height: 160vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-content: center;
     flex-direction: column;
@@ -40,7 +40,7 @@ nav h1{
 }
 
 .container{
-    width: 130vh;
+    width: 75%;
     display: flex;
     align-content: center;
     flex-direction: column;
@@ -60,4 +60,54 @@ nav h1{
     justify-content: center;
     align-items: center;
     gap: 2vh;
+}
+
+.semana{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vh;
+}
+
+.dias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    width: 30vh;
+    padding-top: 3vh;
+
+    background-color: #eeeeee;
+}
+
+.dias img{
+    width: 20vh;
+    height: 20vh;
+    border-radius: 10vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh; 
+}
+
+.dias h3{
+    margin-bottom: 3vh;
+}
+
+.temperaturas{
+    display: flex;
+    justify-content: space-between;
+    gap: 10vh;
+    padding-bottom: 0vh;
+}
+
+.temperatura-max{
+    color: #cf2a27;
+}
+
+.temperatura-min{
+    color: #2b78e4;
+}
+
+.cookie{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
